@@ -41,5 +41,3 @@ Estos enlaces pueden ser de ayuda:
 
 ## Autores
 
-### Jhoanmary Prz Fariña
-### Santiago Sainz Fernández
