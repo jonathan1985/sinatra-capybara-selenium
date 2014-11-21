@@ -1,20 +1,45 @@
-## Sinatra and Capybara [![Build Status](https://travis-ci.org/crguezl/sinatra-capybara-selenium.svg?branch=master)](https://travis-ci.org/crguezl/sinatra-capybara-selenium)
-This example illustrates how to use Sinatra, Capybara and Selenium.
-See the branch `rspecsinatra`
-for an example of how to use `Rspec`and `Sinatra`
+# Práctica: Chat Usando Ajax y jQuery
 
-To see it in action:
 
-      bundle
-      rake server
+## Enunciado
 
-Open a new terminal and run the tests with:
+Modifique el chat visto en la sección Un Chat con Ajax y JQuery [41.4](http://nereida.deioc.ull.es/~lpp/perlexamples/node499.html#section:jquerychat) para que:
 
-      rake
+* Deberán registrarse los usuarios
+* Una vez en el chat:
+1. En un contenedor aparecen los nombres de usuario
+2. En otro los mensajes
+3. Un botón send la entrada para el siguiente mensaje del usuario
+* Escriba las pruebas. Use Selenium
+* Despliegue las pruebas en Travis
+* Haga un análisis de cubrimiento usando Coveralls Repase la sección Coveralls: Análisis de Cubrimiento 20.7
+* Despliegue en Heroku
 
-## See 
-* The blog [sample app with sinatra rspec capybara and selenium](http://codedecoder.wordpress.com/2013/01/09/sample-app-with-sinatra-rspec-capybara-and-selenium/)
-* With Travis CI, you can embed little status icons into your
-  project's README or general documentation. That way, visitors of
-  your projects or site can immediately see its build status.
-  [Travis: Status Images](http://docs.travis-ci.com/user/status-images/)
+## Ayuda
+
+Estos enlaces pueden ser de ayuda:
+
+* Un Chat con Ajax y JQuery [41.4](http://nereida.deioc.ull.es/~lpp/perlexamples/node499.html#section:jquerychat)
+* Integración Contínua: [Travis](http://nereida.deioc.ull.es/~lpp/perlexamples/node307.html#chapter:travis) 
+* Build a Sinatra API Using TDD, Heroku, and Continuous Integration with Travis [35.0.2](https://campusvirtual.ull.es/1415/mod/url/view.php?id=88151)
+* Sample app with Sinatra Rspec Capybara and Selenium 35.0.4
+* Capybara [18](http://nereida.deioc.ull.es/~lpp/perlexamples/node305.html#chapter:capybara)
+* Coveralls: Análisis de Cubrimiento [20.7](http://nereida.deioc.ull.es/~lpp/perlexamples/node314.html#section:coveralls)
+
+-------------------------------------
+## Enlaces
+
+
+### Heroku: [ACCEDER](https://desolate-shelf-1169.herokuapp.com/)
+### Coveralls:
+[![Coverage Status](https://img.shields.io/coveralls/Michelle9/SYTW_P6.svg)](https://coveralls.io/r/Michelle9/SYTW_P6)
+
+### Travis: 
+[![Build Status](https://travis-ci.org/Michelle9/SYTW_P6.svg?branch=master)](https://travis-ci.org/Michelle9/SYTW_P6)
+
+-------------------------------------
+
+## Autores
+
+### Jhoanmary Prz Fariña
+### Santiago Sainz Fernández

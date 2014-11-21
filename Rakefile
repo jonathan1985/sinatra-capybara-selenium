@@ -1,29 +1,47 @@
-task :default => :spec
+task :default => :tests
 
-desc "run spec examples"
-task :spec do
-  sh "bundle exec rspec -I. spec/my_sinatra_app_specs.rb"
-end
-
-desc "run spec examples with poltergeist"
-task :polter do
-  sh "bundle exec rspec -I. spec/polter_app_specs.rb"
-end
-
+desc "Run Server"
+  task :rackup do
+	sh "rackup"
+  end
+  
+desc "run the chat server"
 task :server do
-  sh "bundle exec ruby my_sinatra_app.rb"
+  sh "bundle exec ruby chat.rb"
+end  
+  
+  
+desc "Test (default)" 
+  task :tests => :spec do
+	sh "ruby test/test.rb"
+  end
+
+desc "make a non Ajax request via curl"
+task :noajax do
+  sh "curl -v http://localhost:4567/update"
 end
 
-# Had many problems installing nokogiri 1.6.4 on my mac.
-# solved this way:
+desc "make an Ajax request via curl"
+task :ajax do
+  sh %q{curl -v -H "X-Requested-With: XMLHttpRequest" localhost:4567/update}
+end
 
-# gem install nokogiri -- --use-system-libraries
-#        [--with-xml2-config=/path/to/xml2-config]
-#        [--with-xslt-config=/path/to/xslt-config]
-desc "Install nokogiri 1.6.4 (11/2014)"
-task :nokogiri do
- command = "gem install nokogiri -- --use-system-libraries "+
-   "--with-xml2-config=/usr/local/Cellar/libxml2/2.9.1/lib "+
-   "--with-xslt-config=/usr/local/Cellar/libxml2/2.9.1/include/"
-  sh command
+desc "Visit the GitHub repo page"
+task :open do
+  sh "open https://github.com/Michelle9/SYTW_P6.git"
+end
+
+desc "Run tests in local machine"
+task :local_tests do
+   sh "gnome-terminal -x sh -c 'rackup' && sh -c 'ruby test/test.rb local'"
+end
+
+desc "Open repository"
+task :repo do
+  sh "gnome-open https://github.com/Michelle9/SYTW_P6.git"
+end
+
+desc "run specs"
+task :spec do
+  sh "bundle exec rspec spec/spec.rb"
 end
