@@ -1,7 +1,7 @@
 # Práctica: Chat Usando Ajax y jQuery
 
 
-## Enunciado
+## Enunciado pruebas
 
 Modifique el chat visto en la sección Un Chat con Ajax y JQuery [41.4](http://nereida.deioc.ull.es/~lpp/perlexamples/node499.html#section:jquerychat) para que:
 
